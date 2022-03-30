@@ -18,7 +18,7 @@
             <ul class="flex items-center space-x-6">
                 <li>
                     <a
-                        href="#"
+                        href="{{route('about')}}"
                         class="font-medium tracking-light border-b-2 border-transparent transition-colors duration-200 hover:text-neutral-700 focus:text-neutral-900 hover:border-neutral-700 focus:border-neutral-900"
                     >
                         About
@@ -113,7 +113,7 @@
             <ul class="flex flex-col justify-center space-y-6">
                 <li>
                     <a
-                        href="#"
+                        href="{{route('about')}}"
                         class="flex items-center justify-center font-medium tracking-light border-b-2 border-transparent transition-colors duration-200 hover:text-neutral-700 focus:text-neutral-900 hover:border-neutral-700 focus:border-neutral-900"
                     >
                         About
