@@ -33,10 +33,9 @@
             </p>
 
             <p class="text-neutral-500">
-                Spending several years in the fast-paced fintech sector, leading on the design and development of
-                critical
-                infrastructure used daily by corporate executives has enabled me to perfect making logical decisions
-                whilst not cracking under pressure.
+                After spending several years in the fast-paced fintech sector, leading on the design and development of
+                critical infrastructure used daily by corporate executives I have perfected making logical
+                decisions whilst not cracking under pressure.
             </p>
 
             <div class="flex items-center justify-center md:justify-end">
