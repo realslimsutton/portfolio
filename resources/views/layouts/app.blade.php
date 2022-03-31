@@ -36,7 +36,22 @@
         <script src="https://unpkg.com/alpinejs" defer></script>
         <script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js" defer></script>
 
-        @yield('scripts')
+    @yield('scripts')
+
+    @production
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SQ4BQESXC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+
+                gtag('js', new Date());
+
+                gtag('config', 'G-9SQ4BQESXC');
+            </script>
+        @endproduction
     </head>
     <body class="bg-white antialiased text-neutral-900">
         <x-header/>
