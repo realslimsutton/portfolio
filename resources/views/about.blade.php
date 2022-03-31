@@ -34,7 +34,7 @@
 
             <p class="text-neutral-500">
                 After spending several years in the fast-paced fintech sector, leading on the design and development of
-                critical infrastructure used daily by corporate executives I have perfected making logical
+                critical infrastructure used daily by corporate executives, I have perfected making logical
                 decisions whilst not cracking under pressure.
             </p>
 
