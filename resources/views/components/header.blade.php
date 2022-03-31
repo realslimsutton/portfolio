@@ -1,5 +1,5 @@
 <div
-    class="w-full bg-white fixed top-0 z-50"
+    class="relative w-full"
     x-data="{expanded: false}"
 >
     <div
@@ -107,9 +107,8 @@
         style="display:none;"
         x-show="expanded"
         class="sm:hidden"
-        x-collapse
     >
-        <div class="px-4 py-6 shadow">
+        <div class="bg-white inset-x-0 absolute px-4 py-6 shadow z-50">
             <ul class="flex flex-col justify-center space-y-6">
                 <li>
                     <a

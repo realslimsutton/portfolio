@@ -41,7 +41,9 @@
         <x-header/>
 
         <div class="h-screen w-full flex items-center justify-center">
-            @yield('content')
+            <div class="container mx-auto flex items-center justify-between px-6 py-6">
+                @yield('content')
+            </div>
         </div>
     </body>
 </html>
