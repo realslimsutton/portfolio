@@ -31,7 +31,7 @@
                     <h2
                         class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-light whitespace-nowrap"
                     >
-                        Quality Products
+                        Quality Services
                     </h2>
                 </div>
             </div>

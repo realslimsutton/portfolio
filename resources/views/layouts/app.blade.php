@@ -3,7 +3,7 @@
     lang="{{ str_replace('_', '-', app()->getLocale()) }}"
 >
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8"/>
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1"
@@ -46,6 +46,21 @@
         />
 
         <title>Kieron Sutton | Personal Portfolio</title>
+
+        <meta
+            name="description"
+            content="I'm a freelance web & software developer based in Cambridge, United Kingdom. I have a serious passion for all things tech, with over 6 years of experience."
+        />
+
+        <meta
+            name="robots"
+            content="index, follow"
+        />
+
+        <meta
+            name="author"
+            content="Kieron Sutton"
+        />
 
         <link
             rel="preconnect"
