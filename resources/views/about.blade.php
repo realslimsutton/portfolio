@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['noMargin' => false])
 
 @section('content')
     <div class="relative">

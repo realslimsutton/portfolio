@@ -35,13 +35,23 @@
         ></script>
         <script src="https://unpkg.com/alpinejs" defer></script>
         <script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js" defer></script>
-        <script src="{{mix('js/app.js')}}" defer></script>
+
+        @yield('scripts')
     </head>
     <body class="bg-white antialiased text-neutral-900">
         <x-header/>
 
-        <div class="h-screen w-full flex items-center justify-center">
-            <div class="container mx-auto flex items-center justify-between px-6 py-6">
+        <div
+            id="page-wrapper"
+            @if(!isset($noMargin) || $noMargin)
+            class="w-full flex items-center justify-center"
+            @else
+            class="w-full flex items-center justify-center mt-12 md:mt-0"
+            @endif
+        >
+            <div
+                class="container mx-auto flex items-center justify-between px-6 py-6"
+            >
                 @yield('content')
             </div>
         </div>

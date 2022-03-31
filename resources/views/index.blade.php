@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('scripts')
+    <script src="{{mix('js/app.js')}}" defer></script>
+@endsection
+
 @section('content')
     <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="space-y-6">

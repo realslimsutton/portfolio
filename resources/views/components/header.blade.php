@@ -1,5 +1,5 @@
 <div
-    class="relative w-full"
+    class="relative w-full z-50"
     x-data="{expanded: false}"
 >
     <div
