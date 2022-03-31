@@ -36,7 +36,7 @@
 
                 <li>
                     <a
-                        href="#"
+                        href="{{route('contact')}}"
                         class="font-medium tracking-light border-b-2 border-transparent transition-colors duration-200 hover:text-neutral-700 focus:text-neutral-900 hover:border-neutral-700 focus:border-neutral-900"
                     >
                         Contact me
@@ -130,7 +130,7 @@
 
                 <li>
                     <a
-                        href="#"
+                        href="{{route('contact')}}"
                         class="flex items-center justify-center font-medium tracking-light border-b-2 border-transparent transition-colors duration-200 hover:text-neutral-700 focus:text-neutral-900 hover:border-neutral-700 focus:border-neutral-900"
                     >
                         Contact me

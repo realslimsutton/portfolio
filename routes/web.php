@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
+use Spatie\Honeypot\ProtectAgainstSpam;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [Controller::class, 'index'])->name('home');
-Route::get('/about', [Controller::class, 'about'])->name('about');
+Route::middleware('page-cache')->group(function () {
+    Route::get('/', [Controller::class, 'index'])->name('home');
+    Route::get('/about', [Controller::class, 'about'])->name('about');
+});
+
+Route::middleware(ProtectAgainstSpam::class)->group(function () {
+    Route::get('/contact', [Controller::class, 'contact'])->name('contact');
+    Route::post('/contact', [Controller::class, 'message']);
+});

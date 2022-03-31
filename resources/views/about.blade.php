@@ -12,7 +12,7 @@
             <h2
                 class="text-2xl xs:text-3xl sm:text-4xl font-bold tracking-light whitespace-nowrap"
             >
-                Let me introduce myself...
+                Let me introduce myself
             </h2>
 
             <p class="text-neutral-500">
@@ -40,8 +40,8 @@
 
             <div class="flex items-center justify-center md:justify-end">
                 <a
-                    href="#"
-                    class="flex items-center justify-center bg-white border-2 border-neutral-900 rounded-md p-2 font-medium text-neutral-900 transition-colors duration-200 hover:text-white hover:bg-black focus:text-white focus:bg-black"
+                    href="{{route('contact')}}"
+                    class="flex items-center justify-center bg-white border-2 border-neutral-900 rounded-md py-2 px-4 font-medium text-neutral-900 transition-colors duration-200 hover:text-white hover:bg-black focus:text-white focus:bg-black"
                 >
                     Get in touch
                 </a>
