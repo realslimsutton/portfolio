@@ -9,6 +9,42 @@
             content="width=device-width, initial-scale=1"
         />
 
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="{{asset('apple-touch-icon.png')}}"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="{{asset('favicon-32x32.png')}}"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="{{asset('favicon-16x16.png')}}"
+        />
+        <link
+            rel="manifest"
+            href="{{asset('site.webmanifest')}}"
+        />
+        <link
+            rel="mask-icon"
+            href="{{asset('safari-pinned-tab.svg')}}"
+            color="#5bbad5"
+        />
+
+        <meta
+            name="msapplication-TileColor"
+            content="#ffffff"
+        />
+        <meta
+            name="theme-color"
+            content="#ffffff"
+        />
+
         <title>Kieron Sutton | Personal Portfolio</title>
 
         <link
@@ -36,9 +72,9 @@
         <script src="https://unpkg.com/alpinejs" defer></script>
         <script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js" defer></script>
 
-    @yield('scripts')
+        @yield('scripts')
 
-    @production
+        @production
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SQ4BQESXC"></script>
             <script>
                 window.dataLayer = window.dataLayer || [];

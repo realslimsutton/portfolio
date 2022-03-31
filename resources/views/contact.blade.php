@@ -22,7 +22,7 @@
                     </h2>
 
                     <p class="font-medium">
-                        Freelancer &amp; Contractor
+                        Software engineer
                     </p>
 
                     <div class="border-t border-neutral-100 pt-5 mt-5">
