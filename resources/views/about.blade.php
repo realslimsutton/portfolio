@@ -12,7 +12,7 @@
             <h2
                 class="text-2xl xs:text-3xl sm:text-4xl font-bold tracking-light whitespace-nowrap"
             >
-                Let me introduce myself
+                Introducing... Me.
             </h2>
 
             <p class="text-neutral-500">
