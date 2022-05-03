@@ -27,15 +27,28 @@ class Controller
     public function message(Request $request)
     {
         $inputs = $request->validate([
-            'name' => ['required', 'string'],
-            'email' => ['required', 'string', 'email'],
-            'subject' => ['required', 'string'],
-            'message' => ['required', 'string']
+            'name' => [
+                'required',
+                'string'
+            ],
+            'email' => [
+                'required',
+                'string',
+                'email'
+            ],
+            'subject' => [
+                'required',
+                'string'
+            ],
+            'message' => [
+                'required',
+                'string'
+            ]
         ]);
 
         try {
             Mail::send('email', ['content' => $inputs['message']], function (Message $message) use ($inputs) {
-                $message->subject('Message received from portfolio: ' . $inputs['subject'])
+                $message->subject('Message received from ' . $inputs['name'] . ' (' . $inputs['email'] . '): ' . $inputs['subject'])
                     ->sender($inputs['email'], $inputs['name'])
                     ->from($inputs['email'], $inputs['name'])
                     ->to(config('app.admin_email'));
