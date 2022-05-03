@@ -15,10 +15,8 @@ use Spatie\Honeypot\ProtectAgainstSpam;
 |
 */
 
-Route::middleware('page-cache')->group(function () {
-    Route::get('/', [Controller::class, 'index'])->name('home');
-    Route::get('/about', [Controller::class, 'about'])->name('about');
-});
+Route::get('/', [Controller::class, 'index'])->name('home');
+Route::get('/about', [Controller::class, 'about'])->name('about');
 
 Route::middleware(ProtectAgainstSpam::class)->group(function () {
     Route::get('/contact', [Controller::class, 'contact'])->name('contact');

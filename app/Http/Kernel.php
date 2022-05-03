@@ -41,6 +41,5 @@ class Kernel extends HttpKernel
      * @var array<string, class-string|string>
      */
     protected $routeMiddleware = [
-        'page-cache' => \Silber\PageCache\Middleware\CacheResponse::class
     ];
 }

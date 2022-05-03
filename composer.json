@@ -10,7 +10,6 @@
         "laravel/framework": "^9.2",
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
-        "silber/page-cache": "^1.0",
         "spatie/laravel-honeypot": "^4.2"
     },
     "require-dev": {
